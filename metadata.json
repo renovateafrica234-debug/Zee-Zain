@@ -1,0 +1,6 @@
+{
+  "name": "Dew & Balm",
+  "description": "Gentle Korean skincare storefront, personalized 4-step skin assessment with virtual try-on, and streamlined checkout.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

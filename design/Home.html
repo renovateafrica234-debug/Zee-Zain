@@ -1,0 +1,526 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home — Google AI Studios</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="e712d4b852e2a36b===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'pastel-mint': '#F3EDE8',
+        'pastel-blush': '#FBF1EA',
+        'pastel-oat': '#EDE0D4',
+        'on-pastel': '#1D1B19',
+        'light-primary': '#A84419',
+        'light-on-primary': '#FFFFFF',
+        'light-primary-container': '#943B15',
+        'light-on-primary-container': '#FFF3EC',
+        'light-secondary': '#685D4F',
+        'light-on-secondary': '#FFFFFF',
+        'light-secondary-container': '#EDDDCC',
+        'light-on-secondary-container': '#1D1B19',
+        'light-tertiary': '#8C4B28',
+        'light-on-tertiary': '#FFFFFF',
+        'light-tertiary-container': '#F9E5D8',
+        'light-on-tertiary-container': '#33180A',
+        'light-error': '#BA1A1A',
+        'light-on-error': '#FFFFFF',
+        'light-error-container': '#FFDAD6',
+        'light-on-error-container': '#93000A',
+        'light-background': '#FFF8F4',
+        'light-on-background': '#1D1B19',
+        'light-surface': '#FFF8F4',
+        'light-surface-dim': '#DFD9D5',
+        'light-surface-bright': '#FFFFFF',
+        'light-surface-container-lowest': '#FFFFFF',
+        'light-surface-container-low': '#F9F2EE',
+        'light-surface-container': '#F3EDE8',
+        'light-surface-container-high': '#EEE7E3',
+        'light-surface-container-highest': '#E8E1DD',
+        'light-on-surface': '#1D1B19',
+        'light-surface-variant': '#EDE0D4',
+        'light-on-surface-variant': '#4D463C',
+        'light-outline': '#7F766B',
+        'light-outline-variant': '#D0C5B9',
+        'light-inverse-surface': '#33302D',
+        'light-inverse-on-surface': '#F6EFEB',
+        'light-inverse-primary': '#DDC2A0',
+        'light-shadow': '#000000',
+        'light-scrim': '#000000',
+        'dark-primary': '#DDC2A0',
+        'dark-on-primary': '#3E2E15',
+        'dark-primary-container': '#7A6548',
+        'dark-on-primary-container': '#FFE5C3',
+        'dark-secondary': '#D3C4B4',
+        'dark-on-secondary': '#382F23',
+        'dark-secondary-container': '#51473B',
+        'dark-on-secondary-container': '#C4B6A6',
+        'dark-tertiary': '#BCC7DD',
+        'dark-on-tertiary': '#263142',
+        'dark-tertiary-container': '#5E697C',
+        'dark-on-tertiary-container': '#DEE9FF',
+        'dark-error': '#FFB4AB',
+        'dark-on-error': '#690005',
+        'dark-error-container': '#93000A',
+        'dark-on-error-container': '#FFDAD6',
+        'dark-background': '#151311',
+        'dark-on-background': '#E8E1DD',
+        'dark-surface': '#151311',
+        'dark-surface-dim': '#151311',
+        'dark-surface-bright': '#3C3936',
+        'dark-surface-container-lowest': '#100E0C',
+        'dark-surface-container-low': '#1D1B19',
+        'dark-surface-container': '#221F1D',
+        'dark-surface-container-high': '#2C2927',
+        'dark-surface-container-highest': '#373431',
+        'dark-on-surface': '#E8E1DD',
+        'dark-surface-variant': '#4D463C',
+        'dark-on-surface-variant': '#D0C5B9',
+        'dark-outline': '#998F84',
+        'dark-outline-variant': '#4D463C',
+        'dark-inverse-surface': '#E8E1DD',
+        'dark-inverse-on-surface': '#33302D',
+        'dark-inverse-primary': '#6F5B3F',
+        'dark-shadow': '#000000',
+        'dark-scrim': '#000000',
+      },
+      borderRadius: {
+        'sm': '8px',
+        'DEFAULT': '12px',
+        'md': '16px',
+        'lg': '20px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section': '40px',
+        'page-margin': '24px',
+      },
+      fontFamily: {
+        'display': ['"Atkinson Hyperlegible"', 'sans-serif'],
+        'headline': ['"Atkinson Hyperlegible"', 'sans-serif'],
+        'title': ['"Atkinson Hyperlegible"', 'sans-serif'],
+        'body': ['"Varela"', 'sans-serif'],
+        'label': ['"Atkinson Hyperlegible"', 'sans-serif'],
+        'mono': ['"Spline Sans Mono"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['40px', { lineHeight: '48px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-lg-mobile': ['30px', { lineHeight: '36px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-lg-mobile': ['24px', { lineHeight: '30px', letterSpacing: '-0.2px', fontWeight: '700' }],
+        'headline-md': ['22px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '700' }],
+        'title-lg': ['18px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '700' }],
+        'title-md': ['16px', { lineHeight: '22px', letterSpacing: '0.1px', fontWeight: '700' }],
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0.1px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '21px', letterSpacing: '0.1px', fontWeight: '400' }],
+        'label-lg': ['15px', { lineHeight: '20px', letterSpacing: '0.1px', fontWeight: '700' }],
+        'label-md': ['13px', { lineHeight: '18px', letterSpacing: '0.2px', fontWeight: '700' }],
+        'label-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.25px', fontWeight: '700' }],
+        'mono-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '120ms',
+        'surface-enter': '220ms',
+        'surface-exit': '150ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'surface-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'surface-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&amp;family=Varela&amp;family=Spline+Sans+Mono:wght@500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>.material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons { display: inline-block; width: 1em; height: 1em; line-height: 1 !important; box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle; }</style>
+</head>
+<body class="bg-light-surface text-light-on-surface font-body antialiased">
+  <div class="min-h-screen flex flex-col max-w-md mx-auto bg-light-surface">
+
+    <!-- Sticky App Header -->
+    <header class="sticky top-0 z-20 flex items-center justify-between px-page-margin py-gutter-md bg-light-surface border-b border-light-outline-variant">
+      <div class="flex items-center gap-gutter-sm">
+        <span class="material-symbols-outlined text-[22px] text-light-primary" aria-hidden="true">spa</span>
+        <span data-design-text-token="title-lg" class="font-title text-title-lg text-light-on-surface">Google AI Studios</span>
+      </div>
+      <a href="../skin-assessment/SkinAssessment.html" data-component-id="button-icon" data-component-type="button" data-component-variant="icon" aria-label="Open skin assessment" class="inline-flex items-center justify-center w-[44px] h-[44px] rounded-full bg-light-surface-container-lowest text-light-on-surface border border-light-outline-variant transition-colors duration-state-change ease-state-change hover:bg-light-surface-container focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-primary">
+        <span class="material-symbols-outlined text-[22px]" aria-hidden="true">face_retouching_natural</span>
+      </a>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col gap-section px-page-margin py-gutter-lg">
+
+      <!-- Welcoming Hero Section -->
+      <section aria-labelledby="hero-heading" class="flex flex-col gap-gutter-md p-gutter-lg rounded-xl bg-pastel-mint border border-light-outline-variant">
+        <div class="w-full h-44 rounded-lg overflow-hidden bg-pastel-oat">
+          <img src="https://lh3.googleusercontent.com/aida/ALJJyrAdEkEzt3C957wEVcTPraYqqgfUx1LXrvHzlCyRRE-GEHbsWmMvMG-iriyYKSksYKQ2qoewRV8Ypgz3x5y-XqmX_TXAQgKNu4JAnefy_yRHuvX_mAC2R1FSy_P1yy-FnALj5U6YhTp5qZUWWyXcyzgfruwJyDlZzHBm_tsrrL0aefLixLGhHMad4Jw-21Ja8PcJm7PReVndoNh8LmFl3mSx-p1wSWR00Abi1fkfJ9v1LLZns6q_" alt="Pastel skincare bottles and eucalyptus leaves on cream linen" class="w-full h-full object-cover" data-stitch-original-src="494066c7b2e7940b===../../images/hero_skincare.jpg">
+        </div>
+        <div class="flex flex-col gap-gutter-sm">
+          <h1 id="hero-heading" data-design-text-token="display-lg-mobile" class="font-display text-display-lg-mobile text-on-pastel text-balance">
+            Gentle care, tailored to your skin
+          </h1>
+          <p data-design-text-token="body-lg" class="font-body text-body-lg text-light-on-surface-variant text-pretty">
+            Answer a few calm questions about your skin texture, targeted concerns, and goals to find formulas that fit your budget.
+          </p>
+        </div>
+        <div class="flex flex-col gap-gutter-sm">
+          <a href="../skin-assessment/SkinAssessment.html" data-component-id="button-with-icon" data-component-type="button" data-component-variant="with-icon" class="inline-flex items-center justify-center gap-gutter-sm w-full min-h-[52px] px-gutter-lg py-gutter-sm rounded-full bg-light-primary text-light-on-primary font-label text-label-lg transition-colors duration-state-change ease-state-change hover:bg-light-primary-container focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-primary">
+            <span class="material-symbols-outlined text-[22px]" aria-hidden="true">auto_awesome</span>
+            <span data-design-text-token="label-lg">Start AI Skin Analysis</span>
+          </a>
+          <a href="../skin-assessment/SkinAssessment.html" data-component-id="button-secondary" data-component-type="button" data-component-variant="secondary" class="inline-flex items-center justify-center gap-gutter-sm w-full min-h-[48px] px-gutter-lg py-gutter-sm rounded-full bg-light-surface-container-lowest text-light-on-surface border border-light-outline-variant font-label text-label-lg transition-colors duration-state-change ease-state-change hover:bg-light-surface-container focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-primary">
+            <span class="material-symbols-outlined text-[20px] text-light-primary" aria-hidden="true">spa</span>
+            <span data-design-text-token="label-lg">Start Skin Assessment</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Trending Korean Skincare Section -->
+      <section aria-labelledby="kbeauty-heading" class="flex flex-col gap-gutter-md">
+        <div class="flex items-baseline justify-between gap-gutter-sm">
+          <h2 id="kbeauty-heading" data-design-text-token="headline-lg-mobile" class="font-headline text-headline-lg-mobile text-light-on-surface">
+            Trending Korean Skincare
+          </h2>
+          <span data-design-text-token="label-md" class="font-label text-label-md text-light-primary">
+            Curated picks
+          </span>
+        </div>
+
+        <div class="flex flex-col gap-gutter-sm">
+          <article data-component-id="card-kbeauty" data-component-type="card" data-component-variant="elevated" class="flex items-center gap-gutter-md p-gutter-md rounded-lg bg-light-surface-container-lowest border border-light-outline-variant">
+            <div class="w-20 h-20 shrink-0 rounded-md overflow-hidden bg-pastel-mint">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrCF7-uU6o74avRY-4GI0LLF1NU7HWxMHwNqxmp3q02gr-A_HchDKp-XMKk1ZT3TOPYyc5_hSp8iFeIIhKHk58tW4EGeZWPjEi6UCoxYHe87o_wyoLO1iG1T7KgUY1dqPAnMRgxdCZyNwsIb5Q8sP4yApHCwTP_JczJhI7nQLDOVc8lpoTPXAwgY-h2gE99KJl312Uz6kevzRInoLewG7AbM2wjWN9O6-AvoDVseuo3AUEYWWjNHX-dTC-I97wmPIw" alt="Snail Mucin Repair Essence bottle" class="w-full h-full object-cover" data-stitch-original-src="be7da12465164fce===../../images/kbeauty_snail_essence.jpg">
+            </div>
+            <div class="flex-1 flex flex-col gap-gutter-xs">
+              <div class="flex items-baseline justify-between gap-gutter-sm">
+                <h3 data-design-text-token="title-md" class="font-title text-title-md text-light-on-surface">Mucin Repair Essence</h3>
+                <span data-design-text-token="mono-md" class="font-mono text-mono-md text-light-on-surface tabular-nums">$24</span>
+              </div>
+              <p data-design-text-token="body-md" class="font-body text-body-md text-light-on-surface-variant text-pretty">
+                Plumps fine lines and calms redness with soothing snail mucin and panthenol.
+              </p>
+            </div>
+          </article>
+
+          <article data-component-id="card-kbeauty" data-component-type="card" data-component-variant="elevated" class="flex items-center gap-gutter-md p-gutter-md rounded-lg bg-light-surface-container-lowest border border-light-outline-variant">
+            <div class="w-20 h-20 shrink-0 rounded-md overflow-hidden bg-pastel-blush">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrDt6h_0wSJmm8x35LrlDLQHtqPgCTS33zmD5Zr4pwFBCntz5Ei3c01QG-E2GmVQMTWkqua98LNv4g6D1Xx9WnpVwL1gJ_03vANlcN0DsEjVoCDRwX2zWQ_VSBZRGcv4B244bx3kX2dY_KDcfzclTSnyycb_ghhYaeoMnmLkIKzkLXw_SKf8nVv7AtyPt5xK4pCkpvamluxB2uhyjMpGggM9yIwt1wl22GZFQ7dRFDErgg2MgLnTDhMimE5AYg" alt="Rice Probiotic Sun Relief tube" class="w-full h-full object-cover" data-stitch-original-src="53466f6f3693befd===../../images/kbeauty_sun_relief.jpg">
+            </div>
+            <div class="flex-1 flex flex-col gap-gutter-xs">
+              <div class="flex items-baseline justify-between gap-gutter-sm">
+                <h3 data-design-text-token="title-md" class="font-title text-title-md text-light-on-surface">Rice Sun Relief SPF 50</h3>
+                <span data-design-text-token="mono-md" class="font-mono text-mono-md text-light-on-surface tabular-nums">$18</span>
+              </div>
+              <p data-design-text-token="body-md" class="font-body text-body-md text-light-on-surface-variant text-pretty">
+                Weightless daily UV protection with rice extract and zero white cast.
+              </p>
+            </div>
+          </article>
+
+          <article data-component-id="card-kbeauty" data-component-type="card" data-component-variant="elevated" class="flex items-center gap-gutter-md p-gutter-md rounded-lg bg-light-surface-container-lowest border border-light-outline-variant">
+            <div class="w-20 h-20 shrink-0 rounded-md overflow-hidden bg-pastel-oat">
+              <img src="https://lh3.googleusercontent.com/aida/ALJJyrAs0N8Ay8onV4DJDXc6w5dAuVH0nUtprSsUjIIxEXWiqieBMjvaIhtirjEvYHAq7XlxQmKcBNzSvptqyMh0U_PpHcVQ-6BHJf5hPcpFoC1JVt8Inj9IPxwEYhfXT_pzP9NTfDw8__Yd7m09nr-3Ko4cG8bmVSgUK-8RzRi7jg9e3Pta9TYHpMJp6tYxpZUOGg67jyTWQ6y9pc9BHFHubV2_cGHyPuInE3G4UEemm5vxLwQGN1KWQ0LeX61bCaIMjG-N" alt="Centella Barrier Gel Cream jar" class="w-full h-full object-cover" data-stitch-original-src="9c152dda0c0b80a0===../../images/product_hydrating_cream.jpg">
+            </div>
+            <div class="flex-1 flex flex-col gap-gutter-xs">
+              <div class="flex items-baseline justify-between gap-gutter-sm">
+                <h3 data-design-text-token="title-md" class="font-title text-title-md text-light-on-surface">Centella Barrier Cream</h3>
+                <span data-design-text-token="mono-md" class="font-mono text-mono-md text-light-on-surface tabular-nums">$26</span>
+              </div>
+              <p data-design-text-token="body-md" class="font-body text-body-md text-light-on-surface-variant text-pretty">
+                Locks in gentle hydration and strengthens sensitive skin barriers overnight.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Product Catalog Section -->
+      <section aria-labelledby="catalog-heading" class="flex flex-col gap-gutter-md">
+        <div class="flex items-baseline justify-between gap-gutter-sm">
+          <h2 id="catalog-heading" data-design-text-token="headline-lg-mobile" class="font-headline text-headline-lg-mobile text-light-on-surface">
+            Skincare Catalog
+          </h2>
+          <span id="catalog-count" data-design-text-token="label-md" class="font-label text-label-md text-light-on-surface-variant tabular-nums">
+            4 products
+          </span>
+        </div>
+
+        <!-- Skin Type Filters -->
+        <div class="flex flex-col gap-gutter-sm">
+          <span data-design-text-token="label-md" class="font-label text-label-md text-light-on-surface-variant">
+            Filter by Skin Type
+          </span>
+          <div class="flex flex-wrap gap-gutter-sm" role="group" aria-label="Skin type filter">
+            <button type="button" data-filter-group="skin" data-filter-value="all" aria-pressed="true" data-component-id="chip-filter-selected" data-component-type="chip" data-component-variant="filter" class="skin-chip inline-flex items-center justify-center min-h-[44px] px-gutter-md py-gutter-xs rounded-full bg-light-primary text-light-on-primary border border-light-primary font-label text-label-md transition-colors duration-state-change ease-state-change">
+              <span data-design-text-token="label-md">All Types</span>
+            </button>
+            <button type="button" data-filter-group="skin" data-filter-value="dry" aria-pressed="false" data-component-id="chip-action" data-component-type="chip" data-component-variant="filter" class="skin-chip inline-flex items-center justify-center min-h-[44px] px-gutter-md py-gutter-xs rounded-full bg-light-surface-container-lowest text-light-on-surface border border-light-outline-variant font-label text-label-md transition-colors duration-state-change ease-state-change hover:bg-light-surface-container">
+              <span data-design-text-token="label-md">Dry</span>
+            </button>
+            <button type="button" data-filter-group="skin" data-filter-value="oily" aria-pressed="false" data-component-id="chip-action" data-component-type="chip" data-component-variant="filter" class="skin-chip inline-flex items-center justify-center min-h-[44px] px-gutter-md py-gutter-xs rounded-full bg-light-surface-container-lowest text-light-on-surface border border-light-outline-variant font-label text-label-md transition-colors duration-state-change ease-state-change hover:bg-light-surface-container">
+              <span data-design-text-token="label-md">Oily</span>
+            </button>
+            <button type="button" data-filter-group="skin" data-filter-value="sensitive" aria-pressed="false" data-component-id="chip-action" data-component-type="chip" data-component-variant="filter" class="skin-chip inline-flex items-center justify-center min-h-[44px] px-gutter-md py-gutter-xs rounded-full bg-light-surface-container-lowest text-light-on-surface border border-light-outline-variant font-label text-label-md transition-colors duration-state-change ease-state-change hover:bg-light-surface-container">
+              <span data-design-text-token="label-md">Sensitive</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Budget Filters -->
+        <div class="flex flex-col gap-gutter-sm">
+          <span data-design-text-token="label-md" class="font-label text-label-md text-light-on-surface-variant">
+            Filter by Budget
+          </span>
+          <div class="flex flex-wrap gap-gutter-sm" role="group" aria-label="Budget filter">
+            <button type="button" data-filter-group="budget" data-filter-value="all" aria-pressed="true" data-component-id="chip-filter-selected" data-component-type="chip" data-component-variant="filter" class="budget-chip inline-flex items-center justify-center min-h-[44px] px-gutter-md py-gutter-xs rounded-full bg-light-primary text-light-on-primary border border-light-primary font-label text-label-md transition-colors duration-state-change ease-state-change">
+              <span data-design-text-token="label-md">All Budgets</span>
+            </button>
+            <button type="button" data-filter-group="budget" data-filter-value="under20" aria-pressed="false" data-component-id="chip-action" data-component-type="chip" data-component-variant="filter" class="budget-chip inline-flex items-center justify-center min-h-[44px] px-gutter-md py-gutter-xs rounded-full bg-light-surface-container-lowest text-light-on-surface border border-light-outline-variant font-label text-label-md transition-colors duration-state-change ease-state-change hover:bg-light-surface-container">
+              <span data-design-text-token="label-md">Under $20</span>
+            </button>
+            <button type="button" data-filter-group="budget" data-filter-value="20to40" aria-pressed="false" data-component-id="chip-action" data-component-type="chip" data-component-variant="filter" class="budget-chip inline-flex items-center justify-center min-h-[44px] px-gutter-md py-gutter-xs rounded-full bg-light-surface-container-lowest text-light-on-surface border border-light-outline-variant font-label text-label-md transition-colors duration-state-change ease-state-change hover:bg-light-surface-container">
+              <span data-design-text-token="label-md">$20–$40</span>
+            </button>
+            <button type="button" data-filter-group="budget" data-filter-value="40plus" aria-pressed="false" data-component-id="chip-action" data-component-type="chip" data-component-variant="filter" class="budget-chip inline-flex items-center justify-center min-h-[44px] px-gutter-md py-gutter-xs rounded-full bg-light-surface-container-lowest text-light-on-surface border border-light-outline-variant font-label text-label-md transition-colors duration-state-change ease-state-change hover:bg-light-surface-container">
+              <span data-design-text-token="label-md">$40+</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div id="product-grid" class="grid grid-cols-2 gap-gutter-md items-stretch">
+          <article data-skin="dry sensitive" data-budget="under20" data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="product-card h-full flex flex-col justify-between gap-gutter-sm p-gutter-md rounded-lg bg-light-surface-container-lowest border border-light-outline-variant">
+            <div class="flex flex-col gap-gutter-sm">
+              <div class="w-full aspect-square rounded-md overflow-hidden bg-pastel-oat">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrC_cVlV4W8mZKrXXg4P5zBOUjLYaUm72L_CgYbJL1fHLUVNuSBQHc_6GEUEg6BR2cKXVvb7q70vNw1jXWNrdr4_lMqxpyQfc5CPufUbsWnvQbmxtHkZPWCf8_64RDf2Nj1ncFTDI6pLAnWF44aEQ8CqqPd8h7GIWkmZ8zgO0O9h8czYoikzp4caXMpcvKm7wT4KImAITTZsi9CAoaZrIpCkiYwpHGvM47g7AXgO1H1-HR9q-rgbNEdQyiwOzRq2" alt="Soothing Oat Milk Cleanser bottle" class="w-full h-full object-cover" data-stitch-original-src="3f30f31b9e1970c9===../../images/product_oat_cleanser.jpg">
+              </div>
+              <header class="flex flex-col gap-gutter-xs">
+                <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-primary">Dry &amp; Sensitive</span>
+                <h3 data-design-text-token="title-md" class="font-title text-title-md text-light-on-surface">Oat Cleanser</h3>
+              </header>
+            </div>
+            <div class="flex items-center justify-between pt-gutter-xs">
+              <span data-design-text-token="mono-md" class="font-mono text-mono-md text-light-on-surface tabular-nums">$16</span>
+              <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-on-surface-variant">Under $20</span>
+            </div>
+          </article>
+
+          <article data-skin="oily sensitive" data-budget="20to40" data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="product-card h-full flex flex-col justify-between gap-gutter-sm p-gutter-md rounded-lg bg-light-surface-container-lowest border border-light-outline-variant">
+            <div class="flex flex-col gap-gutter-sm">
+              <div class="w-full aspect-square rounded-md overflow-hidden bg-pastel-blush">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrAFIFG_zHXm9gzYx1Hf5-K3quUB9DGFUmcnmr3vxmqNW1rzw6IxuykTTZwaNaJfbfeJ6uBJk__UPd7n6XrfXbh5xU2FhXCs97AsqI7gzeORbCGrXRzXtObwUYOaQJh4xmns9t_iINbclP3hMtlRpVLGf-A2qZmXkiol52NchP299759HeYIgQX2NhRLcNCWFm-Xi1OYLJLM0cBpbrT2pboj20YrfnVWHShfAQ9mBzXJ0RbtB1lgmwWgYTQb5jBOy1U" alt="Gentle Vitamin C Glow Serum bottle" class="w-full h-full object-cover" data-stitch-original-src="feb0fa2725c58fb6===../../images/product_vitamin_c_serum.jpg">
+              </div>
+              <header class="flex flex-col gap-gutter-xs">
+                <span data-design-text-token="label-sm" class="self-start inline-flex items-center gap-gutter-xs text-light-primary font-label text-label-sm">
+                  <span class="material-symbols-outlined text-[14px]" aria-hidden="true">verified</span>
+                  <span>Certified Authentic</span>
+                </span>
+                <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-primary">Oily &amp; Sensitive</span>
+                <h3 data-design-text-token="title-md" class="font-title text-title-md text-light-on-surface">Glow Serum</h3>
+              </header>
+            </div>
+            <div class="flex items-center justify-between pt-gutter-xs">
+              <span data-design-text-token="mono-md" class="font-mono text-mono-md text-light-on-surface tabular-nums">$28</span>
+              <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-on-surface-variant">$20–$40</span>
+            </div>
+          </article>
+
+          <article data-skin="dry" data-budget="20to40" data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="product-card h-full flex flex-col justify-between gap-gutter-sm p-gutter-md rounded-lg bg-light-surface-container-lowest border border-light-outline-variant">
+            <div class="flex flex-col gap-gutter-sm">
+              <div class="w-full aspect-square rounded-md overflow-hidden bg-pastel-mint">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrAs0N8Ay8onV4DJDXc6w5dAuVH0nUtprSsUjIIxEXWiqieBMjvaIhtirjEvYHAq7XlxQmKcBNzSvptqyMh0U_PpHcVQ-6BHJf5hPcpFoC1JVt8Inj9IPxwEYhfXT_pzP9NTfDw8__Yd7m09nr-3Ko4cG8bmVSgUK-8RzRi7jg9e3Pta9TYHpMJp6tYxpZUOGg67jyTWQ6y9pc9BHFHubV2_cGHyPuInE3G4UEemm5vxLwQGN1KWQ0LeX61bCaIMjG-N" alt="Ceramide Moisture Cream jar" class="w-full h-full object-cover" data-stitch-original-src="9c152dda0c0b80a0===../../images/product_hydrating_cream.jpg">
+              </div>
+              <header class="flex flex-col gap-gutter-xs">
+                <span data-design-text-token="label-sm" class="self-start inline-flex items-center gap-gutter-xs text-light-primary font-label text-label-sm">
+                  <span class="material-symbols-outlined text-[14px]" aria-hidden="true">verified</span>
+                  <span>Certified Authentic</span>
+                </span>
+                <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-primary">Dry Skin</span>
+                <h3 data-design-text-token="title-md" class="font-title text-title-md text-light-on-surface">Cloud Cream</h3>
+              </header>
+            </div>
+            <div class="flex items-center justify-between pt-gutter-xs">
+              <span data-design-text-token="mono-md" class="font-mono text-mono-md text-light-on-surface tabular-nums">$34</span>
+              <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-on-surface-variant">$20–$40</span>
+            </div>
+          </article>
+
+          <article data-skin="dry sensitive oily" data-budget="40plus" data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="product-card h-full flex flex-col justify-between gap-gutter-sm p-gutter-md rounded-lg bg-light-surface-container-lowest border border-light-outline-variant">
+            <div class="flex flex-col gap-gutter-sm">
+              <div class="w-full aspect-square rounded-md overflow-hidden bg-pastel-oat">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrDI7yMLBFqIOa2PWDQfDl9m9BjOkAwmLU9mUeIJnrR1q7cbf7V5Zaf_vOaa0f1hrMOnlf3O3oXKZKTHENweZ5WifpwmtIz7TzwDVCRw6XUljTIK1Yw_Vi-fhJgn8zMD5ClF7Pv9D1zYPcLar1TbDO-a0w4T2Qq31_RRnGL1mSHcqycs6lfSoVoZ-8kNsNNzElQ6EOQ3iP-kYM7SGh-W3kb52OJvz9r4uI6Z6OqGfXZ8UhYEXYytkgbn0Lu3" alt="Even-Tone Botanical Body Balm tube" class="w-full h-full object-cover" data-stitch-original-src="4204d5750e83f2ca===../../images/product_body_balm.jpg">
+              </div>
+              <header class="flex flex-col gap-gutter-xs">
+                <span data-design-text-token="label-sm" class="self-start inline-flex items-center gap-gutter-xs text-light-primary font-label text-label-sm">
+                  <span class="material-symbols-outlined text-[14px]" aria-hidden="true">verified</span>
+                  <span>Certified Authentic</span>
+                </span>
+                <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-primary">All Skin Types</span>
+                <h3 data-design-text-token="title-md" class="font-title text-title-md text-light-on-surface">Body Balm</h3>
+              </header>
+            </div>
+            <div class="flex items-center justify-between pt-gutter-xs">
+              <span data-design-text-token="mono-md" class="font-mono text-mono-md text-light-on-surface tabular-nums">$44</span>
+              <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-on-surface-variant">$40+</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Empty Filter State -->
+        <div id="empty-catalog" class="hidden flex-col items-center text-center gap-gutter-sm p-gutter-lg rounded-lg bg-pastel-oat border border-light-outline-variant">
+          <span class="material-symbols-outlined text-[28px] text-light-primary" aria-hidden="true">search_off</span>
+          <p data-design-text-token="body-lg" class="font-body text-body-lg text-light-on-surface">
+            No formulas match that exact combination yet.
+          </p>
+          <button id="reset-filters-btn" type="button" class="inline-flex items-center justify-center min-h-[44px] px-gutter-lg rounded-full bg-light-primary text-light-on-primary font-label text-label-md">
+            <span data-design-text-token="label-md">Show All Products</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Our Sourcing Transparency Section -->
+      <section aria-labelledby="sourcing-heading" class="flex flex-col gap-gutter-md p-gutter-lg rounded-xl bg-pastel-oat border border-light-outline-variant">
+        <div class="flex items-center gap-gutter-sm">
+          <span class="material-symbols-outlined text-[24px] text-light-primary" aria-hidden="true">verified_user</span>
+          <h2 id="sourcing-heading" data-design-text-token="headline-md" class="font-headline text-headline-md text-on-pastel">
+            Our Sourcing
+          </h2>
+        </div>
+        <p data-design-text-token="body-lg" class="font-body text-body-lg text-light-on-surface-variant text-pretty">
+          Every formula in our catalog is sourced through direct partnerships with Seoul manufacturers and authorized brand distributors—never third-party resellers.
+        </p>
+        <div class="grid grid-cols-1 gap-gutter-sm">
+          <div class="flex items-start gap-gutter-sm p-gutter-md rounded-md bg-light-surface-container-lowest border border-light-outline-variant">
+            <span class="material-symbols-outlined text-[20px] text-light-primary shrink-0" aria-hidden="true">factory</span>
+            <div class="flex flex-col gap-gutter-xs">
+              <span data-design-text-token="title-md" class="font-title text-title-md text-light-on-surface">Direct Manufacturer Partnerships</span>
+              <span data-design-text-token="body-md" class="font-body text-body-md text-light-on-surface-variant">Shipped directly from verified labs with sealed batch-code tracking.</span>
+            </div>
+          </div>
+          <div class="flex items-start gap-gutter-sm p-gutter-md rounded-md bg-light-surface-container-lowest border border-light-outline-variant">
+            <span class="material-symbols-outlined text-[20px] text-light-primary shrink-0" aria-hidden="true">verified</span>
+            <div class="flex flex-col gap-gutter-xs">
+              <span data-design-text-token="title-md" class="font-title text-title-md text-light-on-surface">Authorized Distributor Guarantee</span>
+              <span data-design-text-token="body-md" class="font-body text-body-md text-light-on-surface-variant">Freshness-dated inventory stored in climate-controlled facilities.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Sticky Bottom Navigation -->
+    <nav aria-label="Primary navigation" class="sticky bottom-0 z-20 grid grid-cols-3 bg-light-surface border-t border-light-outline-variant px-gutter-sm py-gutter-xs">
+      <a href="Home.html" aria-current="page" class="flex flex-col items-center justify-center gap-gutter-xs min-h-[48px] text-light-primary font-label text-label-sm">
+        <span class="material-symbols-outlined text-[22px]" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">home</span>
+        <span data-design-text-token="label-sm">Home</span>
+      </a>
+      <a href="../skin-assessment/SkinAssessment.html" class="flex flex-col items-center justify-center gap-gutter-xs min-h-[48px] text-light-on-surface-variant font-label text-label-sm hover:text-light-primary">
+        <span class="material-symbols-outlined text-[22px]" aria-hidden="true">spa</span>
+        <span data-design-text-token="label-sm">Assessment</span>
+      </a>
+      <a href="#catalog-heading" class="flex flex-col items-center justify-center gap-gutter-xs min-h-[48px] text-light-on-surface-variant font-label text-label-sm hover:text-light-primary">
+        <span class="material-symbols-outlined text-[22px]" aria-hidden="true">inventory_2</span>
+        <span data-design-text-token="label-sm">Catalog</span>
+      </a>
+    </nav>
+
+  </div>
+
+  <script>
+    (function () {
+      let activeSkin = 'all';
+      let activeBudget = 'all';
+
+      const skinChips = document.querySelectorAll('.skin-chip');
+      const budgetChips = document.querySelectorAll('.budget-chip');
+      const cards = document.querySelectorAll('.product-card');
+      const countLabel = document.getElementById('catalog-count');
+      const emptyBox = document.getElementById('empty-catalog');
+      const resetBtn = document.getElementById('reset-filters-btn');
+
+      function updateChipStyles(group, selectedVal) {
+        group.forEach(function (btn) {
+          const isSelected = btn.getAttribute('data-filter-value') === selectedVal;
+          btn.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
+          if (isSelected) {
+            btn.classList.remove('bg-light-surface-container-lowest', 'text-light-on-surface', 'border-light-outline-variant', 'hover:bg-light-surface-container');
+            btn.classList.add('bg-light-primary', 'text-light-on-primary', 'border-light-primary');
+          } else {
+            btn.classList.remove('bg-light-primary', 'text-light-on-primary', 'border-light-primary');
+            btn.classList.add('bg-light-surface-container-lowest', 'text-light-on-surface', 'border-light-outline-variant', 'hover:bg-light-surface-container');
+          }
+        });
+      }
+
+      function applyFilters() {
+        let visible = 0;
+        cards.forEach(function (card) {
+          const skinList = card.getAttribute('data-skin').split(' ');
+          const budget = card.getAttribute('data-budget');
+          const matchesSkin = activeSkin === 'all' || skinList.includes(activeSkin);
+          const matchesBudget = activeBudget === 'all' || budget === activeBudget;
+          if (matchesSkin && matchesBudget) {
+            card.classList.remove('hidden');
+            visible += 1;
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+
+        countLabel.textContent = visible + (visible === 1 ? ' product' : ' products');
+        if (visible === 0) {
+          emptyBox.classList.remove('hidden');
+          emptyBox.classList.add('flex');
+        } else {
+          emptyBox.classList.add('hidden');
+          emptyBox.classList.remove('flex');
+        }
+      }
+
+      skinChips.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          activeSkin = btn.getAttribute('data-filter-value');
+          updateChipStyles(skinChips, activeSkin);
+          applyFilters();
+        });
+      });
+
+      budgetChips.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          activeBudget = btn.getAttribute('data-filter-value');
+          updateChipStyles(budgetChips, activeBudget);
+          applyFilters();
+        });
+      });
+
+      resetBtn.addEventListener('click', function () {
+        activeSkin = 'all';
+        activeBudget = 'all';
+        updateChipStyles(skinChips, 'all');
+        updateChipStyles(budgetChips, 'all');
+        applyFilters();
+      });
+    })();
+  </script>
+
+
+</body></html>

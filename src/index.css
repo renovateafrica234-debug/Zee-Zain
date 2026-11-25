@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pastel-mint: #EFE5D8;
+  --color-pastel-blush: #F7EFE6;
+  --color-pastel-oat: #E6D9CA;
+  --color-on-pastel: #1F1B18;
+
+  --color-light-primary: #C27419;
+  --color-light-on-primary: #FFFFFF;
+  --color-light-primary-container: #A66010;
+  --color-light-on-primary-container: #FFF9F2;
+
+  --color-light-secondary: #75685C;
+  --color-light-on-secondary: #FFFFFF;
+  --color-light-secondary-container: #EAE0D5;
+  --color-light-on-secondary-container: #1F1B18;
+
+  --color-light-tertiary: #B36A2E;
+  --color-light-on-tertiary: #FFFFFF;
+  --color-light-tertiary-container: #FBF1E4;
+  --color-light-on-tertiary-container: #382210;
+
+  --color-light-surface: #F7F2EC;
+  --color-light-surface-container-lowest: #FFFFFF;
+  --color-light-surface-container-low: #F2EAE0;
+  --color-light-surface-container: #EAE0D5;
+  --color-light-surface-container-high: #E2D5C7;
+  --color-light-surface-container-highest: #D8C9B9;
+  --color-light-on-surface: #1F1B18;
+  --color-light-surface-variant: #E6D9CA;
+  --color-light-on-surface-variant: #6B6056;
+
+  --color-light-outline: #9A8D80;
+  --color-light-outline-variant: #E2D7CB;
+
+  --color-olive-primary: #E59A3C;
+  --color-olive-container: #E59A3C;
+
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-headline: "Plus Jakarta Sans", sans-serif;
+  --font-title: "Plus Jakarta Sans", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-label: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "Spline Sans Mono", monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #F7F2EC;
+    color: #1F1B18;
+  }
+
+  body {
+    font-family: "DM Sans", sans-serif;
+    background-color: #F7F2EC;
+    color: #1F1B18;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.material-symbols-outlined {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1 !important;
+  box-sizing: content-box;
+  overflow: hidden;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.material-symbols-filled {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
